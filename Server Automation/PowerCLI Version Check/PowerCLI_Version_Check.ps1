@@ -22,7 +22,7 @@ If ($OnlineVersion -like $CurrentVersion)
      }
 Elseif ($OnlineVersion -notlike $CurrentVersion)
     {
-        $ReadHost = Read-Host "PowerCLI Current Version is $CurrentVersion.version, newest is $OnlineVersion.Version. Do you want to update ( Y / N )"
+        $ReadHost = Read-Host "PowerCLI Current Version is $CurrentVersion.version, newest is $OnlineVersion. Do you want to update ( Y / N )"
             Switch($ReadHost)
                 {
                     Y {Update-Module -Name VMware.PowerCLI}
